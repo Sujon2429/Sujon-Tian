@@ -1,8 +1,17 @@
-def multiplication(first_number, second_number):
-    return first_number * second_number
+def multiply(x,y):
+    result = x*y
+    return result
 
-a = int(input("1st value: "))
-b = int(input("2nd value: "))
+while True:
+    
+    try:
+        num1 = float(input("Enter the first number: "))
+        num2 = float(input("Enter the second number: "))
 
-x = multiplication(a,b)
-print(x)
+        result = multiply(num1, num2)
+        print(f"The multiplication of {num1}, {num2}: {result}")
+        break
+
+    except:
+        print("Invalid input. Please enter valid numbers.")
+              
